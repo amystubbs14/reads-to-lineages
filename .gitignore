@@ -1,0 +1,7 @@
+data/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+.DS_Store

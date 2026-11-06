@@ -1,0 +1,80 @@
+accession	group	lineage	note
+ERR5556343	voivoc	P.1	
+ERR5743893	voivoc	B.1.617.1	
+ERR5743043	voivoc	B.1.617.2	
+ERR5771988	voivoc	B.1.617.1	
+ERR5691945	voivoc	B.1.351	
+ERR5181310	voivoc	B.1.525	
+ERR5181360	voivoc	B.1.525	
+ERR5749609	voivoc	B.1.617.2	
+SRR13422802	voivoc	B.1.427	
+SRR13422799	voivoc	B.1.429	
+SRR13500958	voivoc	P.2	
+SRR13606410	voivoc	P.2	
+SRR13511054	voivoc	B.1.526	
+SRR13603869	voivoc	B.1.427	
+SRR14241199	voivoc	B.1.526	
+ERR5405022	voivoc	B.1.1.7	
+SRR11915959	nonvoivoc	B.35	
+SRR12751757	nonvoivoc	D.2	
+SRR13129709	nonvoivoc	D.3	
+SRR12162365	nonvoivoc	B.1.1	
+SRR12530461	nonvoivoc	B.1.1.431	
+SRR11577968	nonvoivoc	B.1.320	
+SRR11494584	nonvoivoc	B.4.5	
+SRR13001544	nonvoivoc	B.1.199	
+SRR13195337	nonvoivoc	B.1.309	
+SRR13195265	nonvoivoc	B.1.1.205	
+SRR13195052	nonvoivoc	B.1.1.139	
+SRR13526755	nonvoivoc	B.1.1.418	
+SRR13527262	nonvoivoc	B.1.1.391	
+SRR13689874	nonvoivoc	B.1.1.512	
+SRR13690340	nonvoivoc	B.1.232	
+SRR13690003	nonvoivoc	B.1.2	
+SRR12661075	nonvoivoc	B.1.452	
+SRR12763543	nonvoivoc	B.1.1.463	
+SRR12833927	nonvoivoc	B.1.1.514	
+SRR12833718	nonvoivoc	B.1.1.174	
+SRR12192434	nonvoivoc	B.1.336	
+SRR13193342	nonvoivoc	B.1.578	
+SRR13373851	nonvoivoc	B.1.492	
+SRR13668148	nonvoivoc	B.1.570	
+SRR13297857	nonvoivoc	B.1.450	
+SRR12733606	nonvoivoc	B.1.390	
+SRR13574337	nonvoivoc	B.1.375	
+SRR13486908	nonvoivoc	B.1.385	
+SRR13089080	nonvoivoc	B.1.589	
+SRR13062553	nonvoivoc	B.1.265	
+SRR13004400	nonvoivoc	B.1.264	
+SRR13297853	nonvoivoc	B.1.323	
+SRR12774785	nonvoivoc	B.1.287	
+SRR13126740	nonvoivoc	B.1.384	
+SRR13358209	nonvoivoc	B.1.1.440	
+SRR13687078	nonvoivoc	B.1.1.362	
+SRR12212912	nonvoivoc	B.1.112	
+SRR12901576	nonvoivoc	B.1.515	
+SRR13433883	nonvoivoc	B.1.258.23	
+SRR16298175	failedqc	NA	Failed sample, high host contamination (62%)
+SRR16298157	failedqc	NA	Failed sample, low phred score leading to insufficient paired reads
+SRR16298173	failedqc	NA	Failed sample, ambigous sites (Ns) >3000
+SRR16298172	failedqc	NA	Failed sample, low coverage
+SRR16298171	failedqc	NA	Failed sample, VADR alert >1
+SRR16298170	failedqc	NA	Failed positive control, ambigous sites (Ns) > 3000, amplicon dropout
+SRR16298169	failedqc	NA	Failed positive control, ambigous sites (Ns) > 3000
+SRR16298168	failedqc	NA	Failed positive control, long stretch of Ns > 100
+SRR16298167	failedqc	NA	Failed negative control (non-template control), contamination
+SRR16298166	failedqc	NA	Failed negative control (non-template control), contamination
+SRR16298165	failedqc	NA	Failed Negative control (water), contamination
+SRR16298174	failedqc	NA	Failed sample, low coverage, high host contamination (87%)
+SRR16298164	failedqc	NA	Failed sample, high host contamination (96%)
+SRR16298163	failedqc	NA	Failed sample, low coverage
+SRR16298162	failedqc	NA	Failed sample, low coverage
+SRR16298161	failedqc	NA	Failed sample, low coverage breadth
+SRR16298160	failedqc	NA	Failed sample, ambigous sites (Ns) >3000
+SRR16298159	failedqc	NA	Failed sample, high host contamination (69%)
+SRR16298158	failedqc	NA	Failed sample, high host contamination (50%)
+SRR12899254	failedqc	NA	Failed sample, frameshift leading to VADR failure
+SRR12973280	failedqc	NA	Failed sample, frameshift leading to VADR failure
+SRR13490700	failedqc	NA	Failed sample, frameshift leading to VADR failure
+SRR13499308	failedqc	NA	Failed sample, frameshift leading to VADR failure
+SRR13645688	failedqc	NA	Failed sample, frameshift leading to VADR failure
