@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	ERR5556343	/Users/amystubbs/projects/Watchmaker/results/qc/ERR5556343.fastp.json

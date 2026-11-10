@@ -1,0 +1,2 @@
+Sample	Passed Filter	Low Quality	Too Many N	Low Complexity	Too Short	Too Long
+ERR5556343	433070.0	526.0	64.0	nan	0.0	0.0
