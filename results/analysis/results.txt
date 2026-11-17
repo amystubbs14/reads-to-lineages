@@ -1,0 +1,44 @@
+=== Samples ===
+Included: 53 (14 VOI/VOC, 39 non-VOI/VOC); 48 lineages
+Excluded for QC (<90% covered): ERR5743893 (B.1.617.1, 67%), ERR5405022 (B.1.1.7, 41%)
+
+=== Features ===
+442 variants in total; 92 seen in >= 2 included samples
+Missing (NA) cells among included samples: 2.2%
+
+=== Unsupervised ===
+PCA variance explained: PC1 20.0%, PC2 16.5%
+K-means (k=2) vs true groups: adjusted Rand index = -0.05 (1 = perfect match, 0 = no better than chance)
+
+=== Classification (VOI/VOC vs non-VOI/VOC) ===
+Baseline (random guessing in class proportions): balanced accuracy 0.60
+Random Forest, all variants:
+  stratified 5-fold x10   balanced accuracy 0.93 +/- 0.11 | VOI/VOC recall 0.86
+  leave-lineage-out       balanced accuracy 0.82 | VOI/VOC recall 0.64
+  misclassified when lineage unseen: ERR5743043 (B.1.617.2, true VOI/VOC), ERR5771988 (B.1.617.1, true VOI/VOC), SRR13500958 (P.2, true VOI/VOC), SRR13606410 (P.2, true VOI/VOC), SRR14241199 (B.1.526, true VOI/VOC)
+
+=== Top 15 variants (Random Forest importance) ===
+variant                 gene      RF imp  VOC freq  non freq
+23012G>A                S          0.115      0.50      0.00
+11287GTCTGGTTTT>G       ORF1ab     0.085      0.43      0.00
+22917T>G                S          0.054      0.36      0.00
+26681C>T                M          0.036      0.29      0.00
+28887C>T                N          0.032      0.50      0.05
+28272A>T                intergenic   0.032      0.25      0.00
+28253C>T                ORF8       0.031      0.27      0.00
+25088G>T                S          0.030      0.21      0.00
+26767T>C                M          0.026      0.29      0.00
+21846C>T                S          0.025      0.25      0.00
+23664C>T                S          0.024      0.21      0.00
+17014G>T                ORF1ab     0.024      0.21      0.00
+22018G>T                S          0.021      0.21      0.00
+25469C>T                ORF3a      0.020      0.21      0.00
+11201A>G                ORF1ab     0.020      0.21      0.00
+
+=== Robustness ===
+Random Forest, top 10 variants removed:
+  stratified 5-fold x10   balanced accuracy 0.83 +/- 0.15 | VOI/VOC recall 0.67
+  leave-lineage-out       balanced accuracy 0.68 | VOI/VOC recall 0.36
+VOI/VOC samples that failed QC, predicted by the final model:
+  ERR5743893 (B.1.617.1, 67% covered, 55% of features unknown) -> non-VOI/VOC
+  ERR5405022 (B.1.1.7, 41% covered, 64% of features unknown) -> non-VOI/VOC
