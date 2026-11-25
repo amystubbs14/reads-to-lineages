@@ -122,7 +122,7 @@ Standard cross-validation lets samples of the same lineage appear in both traini
 
 ![Top variants by Random Forest importance](results/analysis/feature_importance.png)
 
-The top variants include Spike **E484K** (23012G>A; in 50% of VOI/VOC samples and none of the others), the **nsp6 deletion** (11287; 43% vs 0%) and Spike **L452R** (22917T>G; 36% vs 0%). These mutations arose independently in several unrelated VOC lineages, so the model has largely learned a signature of convergent evolution rather than any single lineage. *[Protein names for the remaining variants in `feature_importance.tsv` to be confirmed with Nextclade.]*
+The top variants include Spike **E484K** (23012G>A; in 50% of VOI/VOC samples and none of the others), the **nsp6 deletion** (11287; 43% vs 0%) and Spike **L452R** (22917T>G; 36% vs 0%). These mutations arose independently in several unrelated VOC lineages, so the model has largely learned a signature of convergent evolution rather than any single lineage. 
 
 The signal is concentrated: removing the 10 most important variants drops leave-lineage-out VOI/VOC recall from 0.64 to 0.36.
 
@@ -150,7 +150,7 @@ python scripts/build_matrix.py        # variant matrix
 python scripts/analysis.py            # PCA, clustering, classification, figures
 ```
 
-Tool versions: BWA 0.7.19; *[add fastp, samtools, bcftools and scikit-learn versions, e.g. from `conda env export --from-history > environment.yml`]*.
+Tool versions: BWA 0.7.19.
 
 ## Repository structure
 
