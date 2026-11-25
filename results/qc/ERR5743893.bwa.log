@@ -1,0 +1,34 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 225594 sequences (40000414 bp)...
+[M::process] read 170450 sequences (29714766 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 102183, 19, 2)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (380, 386, 394)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (352, 422)
+[M::mem_pestat] mean and std.dev: (390.49, 10.60)
+[M::mem_pestat] low and high boundaries for proper pairs: (338, 436)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (2759, 7351, 8163)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 18971)
+[M::mem_pestat] mean and std.dev: (5482.74, 3385.70)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 24375)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 225594 reads in 22.076 CPU sec, 8.197 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 79728, 12, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (379, 384, 393)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (351, 421)
+[M::mem_pestat] mean and std.dev: (389.48, 10.10)
+[M::mem_pestat] low and high boundaries for proper pairs: (337, 435)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (814, 4663, 5826)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15850)
+[M::mem_pestat] mean and std.dev: (3841.50, 2220.26)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 20862)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[mem_sam_pe] paired reads have different names: "ERR5743893.198317", "ERR5743893.198353"
+

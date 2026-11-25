@@ -1,0 +1,52 @@
+
+WARNING: different read numbers of the 1498 pack
+Read1 pack size: 1000
+Read2 pack size: 580
+Ignore the unmatched reads
+
+Read1 before filtering:
+total reads: 1500580
+total bases: 330724640
+Q20 bases: 324802359(98.2093%)
+Q30 bases: 311916164(94.3129%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 1500580
+total bases: 300707156
+Q20 bases: 292998827(97.4366%)
+Q30 bases: 278141775(92.4959%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 1494453
+total bases: 329380253
+Q20 bases: 323662380(98.2641%)
+Q30 bases: 310906583(94.3914%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 1494453
+total bases: 299493918
+Q20 bases: 292126753(97.5401%)
+Q30 bases: 277419660(92.6295%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 2988906
+reads failed due to low quality: 6856
+reads failed due to too many N: 5398
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+
+Duplication rate: 83.5957%
+
+Insert size peak (evaluated by paired-end reads): 380
+
+JSON report: results/qc/ERR5181360.fastp.json
+HTML report: results/qc/ERR5181360.fastp.html
+
+fastp -i data/raw/ERR5181360_1.fastq.gz -I data/raw/ERR5181360_2.fastq.gz -o data/trim/ERR5181360_1.fq.gz -O data/trim/ERR5181360_2.fq.gz -j results/qc/ERR5181360.fastp.json -h results/qc/ERR5181360.fastp.html -w 4 
+fastp v1.4.0, time used: 26 seconds

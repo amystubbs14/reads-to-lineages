@@ -1,0 +1,46 @@
+Read1 before filtering:
+total reads: 142646
+total bases: 17245375
+Q20 bases: 17105827(99.1908%)
+Q30 bases: 16789254(97.3551%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 142646
+total bases: 17267452
+Q20 bases: 16813329(97.3701%)
+Q30 bases: 16097006(93.2217%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 141362
+total bases: 17082513
+Q20 bases: 16969131(99.3363%)
+Q30 bases: 16668021(97.5736%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 141362
+total bases: 17080902
+Q20 bases: 16698225(97.7596%)
+Q30 bases: 16017543(93.7746%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 282724
+reads failed due to low quality: 1332
+reads failed due to too many N: 1236
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 4408
+bases trimmed due to adapters: 132637
+
+Duplication rate: 2.57701%
+
+Insert size peak (evaluated by paired-end reads): 44
+
+JSON report: results/qc/SRR16298175.fastp.json
+HTML report: results/qc/SRR16298175.fastp.html
+
+fastp -i data/raw/SRR16298175_1.fastq.gz -I data/raw/SRR16298175_2.fastq.gz -o data/trim/SRR16298175_1.fq.gz -O data/trim/SRR16298175_2.fq.gz -j results/qc/SRR16298175.fastp.json -h results/qc/SRR16298175.fastp.html -w 4 
+fastp v1.4.0, time used: 4 seconds

@@ -1,0 +1,24 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 288194 sequences (40000064 bp)...
+[M::process] read 14256 sequences (1965180 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (9, 143961, 6, 4)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (144, 184, 230)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 402)
+[M::mem_pestat] mean and std.dev: (188.90, 64.42)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 488)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 288194 reads in 16.156 CPU sec, 4.782 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 7101, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (140, 185, 235)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 425)
+[M::mem_pestat] mean and std.dev: (189.27, 67.10)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 520)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[mem_sam_pe] paired reads have different names: "ERR5405022.154546", "ERR5405022.154564"
+

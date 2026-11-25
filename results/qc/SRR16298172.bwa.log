@@ -1,0 +1,15 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 5108 sequences (666118 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 2529, 5, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (114, 177, 263)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 561)
+[M::mem_pestat] mean and std.dev: (195.85, 106.59)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 710)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 5108 reads in 0.260 CPU sec, 0.075 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 4 -R @RG\tID:SRR16298172\tSM:SRR16298172 data/ref/NC_045512.2.fasta data/trim/SRR16298172_1.fq.gz data/trim/SRR16298172_2.fq.gz
+[main] Real time: 0.108 sec; CPU: 0.290 sec

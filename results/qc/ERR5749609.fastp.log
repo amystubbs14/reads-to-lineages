@@ -1,0 +1,52 @@
+
+WARNING: different read numbers of the 2321 pack
+Read1 pack size: 1000
+Read2 pack size: 879
+Ignore the unmatched reads
+
+Read1 before filtering:
+total reads: 2323879
+total bases: 512217364
+Q20 bases: 500613697(97.7346%)
+Q30 bases: 476567855(93.0402%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 2323879
+total bases: 465685093
+Q20 bases: 453118818(97.3016%)
+Q30 bases: 428515620(92.0183%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 2321111
+total bases: 511615396
+Q20 bases: 500139970(97.757%)
+Q30 bases: 476169191(93.0717%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 2321111
+total bases: 465138582
+Q20 bases: 452785704(97.3443%)
+Q30 bases: 428265407(92.0726%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 4642222
+reads failed due to low quality: 5032
+reads failed due to too many N: 504
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 6
+bases trimmed due to adapters: 204
+
+Duplication rate: 81.284%
+
+Insert size peak (evaluated by paired-end reads): 380
+
+JSON report: results/qc/ERR5749609.fastp.json
+HTML report: results/qc/ERR5749609.fastp.html
+
+fastp -i data/raw/ERR5749609_1.fastq.gz -I data/raw/ERR5749609_2.fastq.gz -o data/trim/ERR5749609_1.fq.gz -O data/trim/ERR5749609_2.fq.gz -j results/qc/ERR5749609.fastp.json -h results/qc/ERR5749609.fastp.html -w 4 
+fastp v1.4.0, time used: 37 seconds

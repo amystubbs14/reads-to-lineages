@@ -1,0 +1,46 @@
+Read1 before filtering:
+total reads: 912571
+total bases: 201136146
+Q20 bases: 197741282(98.3122%)
+Q30 bases: 190047133(94.4868%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 912571
+total bases: 182869469
+Q20 bases: 179120243(97.9498%)
+Q30 bases: 170837806(93.4206%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 909981
+total bases: 200567683
+Q20 bases: 197255364(98.3485%)
+Q30 bases: 189603350(94.5334%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 909981
+total bases: 182355882
+Q20 bases: 178707406(97.9993%)
+Q30 bases: 170473589(93.484%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 1819962
+reads failed due to low quality: 1780
+reads failed due to too many N: 3400
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 2
+bases trimmed due to adapters: 113
+
+Duplication rate: 84.2634%
+
+Insert size peak (evaluated by paired-end reads): 380
+
+JSON report: results/qc/ERR5181310.fastp.json
+HTML report: results/qc/ERR5181310.fastp.html
+
+fastp -i data/raw/ERR5181310_1.fastq.gz -I data/raw/ERR5181310_2.fastq.gz -o data/trim/ERR5181310_1.fq.gz -O data/trim/ERR5181310_2.fq.gz -j results/qc/ERR5181310.fastp.json -h results/qc/ERR5181310.fastp.html -w 4 
+fastp v1.4.0, time used: 49204 seconds

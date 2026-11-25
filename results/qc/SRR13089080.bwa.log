@@ -1,0 +1,30 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 56130 sequences (13909913 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (69, 26011, 66, 61)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (1848, 4787, 7185)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 17859)
+[M::mem_pestat] mean and std.dev: (4660.03, 2892.77)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 23196)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (380, 387, 397)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (346, 431)
+[M::mem_pestat] mean and std.dev: (389.29, 12.90)
+[M::mem_pestat] low and high boundaries for proper pairs: (329, 448)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (1435, 3828, 6945)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 17965)
+[M::mem_pestat] mean and std.dev: (4267.58, 2985.25)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 23475)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (1748, 4172, 6937)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 17315)
+[M::mem_pestat] mean and std.dev: (4231.89, 2779.18)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 22504)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 56130 reads in 5.590 CPU sec, 2.546 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 4 -R @RG\tID:SRR13089080\tSM:SRR13089080 data/ref/NC_045512.2.fasta data/trim/SRR13089080_1.fq.gz data/trim/SRR13089080_2.fq.gz
+[main] Real time: 3.013 sec; CPU: 5.940 sec
