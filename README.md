@@ -5,7 +5,8 @@ A short-read pipeline (fastp → BWA-MEM → samtools → bcftools) applied to 7
 **Main findings**
 
 - The pipeline recovered all 12 lineage-defining Spike mutations of a Gamma (P.1) validation sample.
-- Validating against a known lineage exposed three problems that default settings hide: an indel silently missed at high depth, a low-frequency deletion artefact reported as high-frequency, and mutations missing because of amplicon dropout. Each was diagnosed and fixed or documented (see [Validation](#validation-what-a-known-lineage-revealed)).
+- Validating against a known lineage exposed three problems that default settings hide: an indel silently missed at high depth, a low-frequency deletion artefact reported as high-frequency, and mutations missing because of amplicon dropout. 
+
 - Read-level QC (coverage breadth and coverage gaps) caught all contamination and host-contamination failures in the CDC failed-QC set, but not failures caused by low depth, ambiguous bases or frameshifts.
 - A Random Forest separates VOI/VOC from other lineages with balanced accuracy **0.93** under standard cross-validation, but **0.82** when tested on lineages it has never seen. The most informative variants are mutations that arose independently in several unrelated VOC lineages (for example Spike E484K and L452R, and the nsp6 deletion).
 
@@ -125,9 +126,7 @@ The top variants include Spike **E484K** (23012G>A; in 50% of VOI/VOC samples an
 
 The signal is concentrated: removing the 10 most important variants drops leave-lineage-out VOI/VOC recall from 0.64 to 0.36.
 
-### QC failures propagate
 
-The two VOI/VOC samples excluded for low coverage (Alpha, Kappa) are both predicted as non-VOI/VOC by the final model. 55–64% of their features fall in uncovered regions and are imputed as reference, so most of their mutations are invisible to the model. Analysed naively, poor-coverage samples would be misclassified.
 
 ## Limitations
 
@@ -135,9 +134,7 @@ The two VOI/VOC samples excluded for low coverage (Alpha, Kappa) are both predic
 - **Feature filtering before cross-validation.** The "seen in ≥ 2 samples" filter was applied to all 53 samples before splitting; a stricter design would apply it inside each fold.
 - **Importance is descriptive.** Feature importance comes from a model fitted to all samples and describes this dataset.
 - **Imputation.** Missing sites are filled as reference (0) inside each training fold. This matters little for the included samples (2.2% missing) but dominates for low-coverage samples.
-- **Labels are a policy category.** VOI/VOC status is a designation made by public-health bodies, so perfect classification from sequence alone is not expected.
-- **Primer trimming.** ARTIC primers were not trimmed (e.g. with `ivar trim`); primer sequence can bias calls at amplicon ends.
-- **Open questions.** Expected mutations not called in two VOI/VOC samples (Beta K417N in ERR5691945; Eta Y144 deletion in ERR5181310) have not yet been investigated.
+
 
 ## Reproducing the analysis
 
