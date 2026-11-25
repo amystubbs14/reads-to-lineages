@@ -5,3 +5,4 @@ data/
 *.bam
 *.bai
 .DS_Store
+*.log
